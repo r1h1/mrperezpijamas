@@ -60,6 +60,10 @@ body main a:hover {
     color: #ffffff;
 }
 
+body .product-of-sale a{
+    text-decoration: none;
+}
+
 body .filters {
     height: auto;
     position: relative;

@@ -32,7 +32,7 @@ body main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 150vh;
 }
 
 body main .welcome-div h1 {
@@ -46,15 +46,6 @@ body main .welcome-div p {
     font-size: 2vh;
     padding-left: 13vh;
     text-align: center;
-}
-
-body main .welcome-div a {
-    font-size: 2vh;
-    margin: 10vh 0vh 0vh 13vh;
-    text-decoration: none;
-    color: black;
-    background: #ffffff;
-    padding: 1.4vh;
 }
 
 body main a:hover {
@@ -81,17 +72,16 @@ body main form{
 }
 
 @media only screen and (max-width: 1000px) {
-
-    body main h1 {
+    body main .welcome-div h1 {
+        padding-top: 5vh;
+        padding-left: 0vh;
+    }
+    
+    body main .welcome-div p {
         padding-left: 0vh;
     }
 
-    body main p {
-        padding-left: 0vh;
-    }
-
-    body main a {
-        margin: 0vh 0vh 0vh 0vh;
-        padding: 1.4vh;
+    body main {
+        height: 150vh;
     }
 }

@@ -8,11 +8,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-body p,
-h5 {
-    font-size: 1.8vh;
-}
-
 body header nav{
     background-color: #ffffff;
 }
@@ -56,17 +51,23 @@ body .filters .filters-container {
 
 body .product-of-sale {
     height: auto;
-    padding-top:  13vh;
-    padding-bottom: 20vh;
-}
-
-body .product-of-sale h2 {
-    font-weight: 900;
-    padding-bottom: 4vh;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }
 
 body .product-of-sale .product .card{
-    height: 50vh;
+    height: auto;
+}
+
+body .product-of-sale .product .card a{
+    text-decoration: none;
+    background-color: #ddb150;
+    color: #ffffff;
+    padding: 1vh 3vh 1vh 3vh;
+}
+
+body .product-of-sale .product .card a:hover {
+    font-size: 2.2vh;
 }
 
 body footer {

@@ -26,6 +26,9 @@
                 <div class="session-icons">
                     <ul>
                         <li class="me-4">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="me-4">
                             <a class="nav-link active" aria-current="page" href="#info-contacto">Contacto</a>
                         </li>
                         <li class="me-4">
@@ -43,28 +46,44 @@
     </header>
 
     <main class="container-fluid">
-        <h1>{nombre producto}</h1>
+        <h1>Información del producto</h1>
     </main>
 
     <section class="product-of-sale container">
-        <h2 class="text-center">Catálogo de productos</h2>
         <div class="row g-4">
-            <div class="col-sm-12 col-md-12 col-lg-12 product position-relative">
+            <div class="col-sm-12 col-md-12 col-lg-12 product">
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="row g-2">
-                            <div class="col-sm-6">
-                                <h5>Pijama negra mujer</h5>
+                            <div class="col-sm-12 col-md-12 col-lg-6 text-center">
+                                <img src="../../assets/img/pijama.jpg" alt="image-product" width="100%">
                             </div>
-                            <div class="col-sm-6">
-                                <p class="card-text fw-bold text-end">Q500.00</p>
+                            <div class="col-sm-12 col-md-12 col-lg-5 ms-2">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <h3 class="card-text mt-4 fw-bold">Pijama negra mujer</h3>
+                                        <p>SHEIN</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <h4 class="card-text fw-bold">Q500.00</h4>
+                                        <p class="text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Et at neque fugiat
+                                            necessitatibus temporibus vitae velit quod eum asperiores magnam similique.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <p>Cantidad</p>
+                                        <input type="number" class="form-control text-center" min="1" max="9999">
+                                    </div>
+                                    <div class="col-12 mt-4 mb-4">
+                                        <a>Añadir al carrito</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
         </div>
     </section>
 
@@ -79,7 +98,7 @@
                     <li>
                         <h5 class="fw-bold">Servicios</h5>
                     </li>
-                    <a href="views/login.html" class="mt-5">
+                    <a href="../../views/login.html" class="mt-5">
                         <li>Perfil</li>
                     </a>
                     <a href="#info-contacto">
