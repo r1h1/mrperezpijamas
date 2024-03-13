@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+body p,
+h5 {
+    font-size: 1.8vh;
+}
+
+body header nav{
+    background-color: #ffffff;
+}
+
+body header nav .session-icons ul{
+    list-style: none;
+}
+
+body header nav .session-icons ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+body main {
+    background-image: url(../img/pijama-dog.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+body main .welcome-div h1 {
+    padding-top: 28vh;
+    font-weight: 900;
+    padding-left: 13vh;
+}
+
+body main .welcome-div p {
+    font-size: 2vh;
+    padding-left: 13vh;
+}
+
+body main .welcome-div a {
+    font-size: 2vh;
+    margin: 10vh 0vh 0vh 13vh;
+    text-decoration: none;
+    color: black;
+    background: #ffffff;
+    padding: 1.4vh;
+}
+
+body main a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body main .form-div{
+    margin-top: 1vh;
+    padding: 6vh;
+}
+
+body main .form-div form a{
+    text-decoration: none;
+    background-color: #ddb150;
+    color: #ffffff;
+    margin-top: 50vh;
+    padding: 1vh 3vh 1vh 3vh;
+}
+
+body main form{
+    background-color: #ffffff;
+    padding: 6vh;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body main h1 {
+        padding-left: 0vh;
+    }
+
+    body main p {
+        padding-left: 0vh;
+    }
+
+    body main a {
+        margin: 0vh 0vh 0vh 0vh;
+        padding: 1.4vh;
+    }
+}
