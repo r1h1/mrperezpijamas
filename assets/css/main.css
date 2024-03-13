@@ -62,14 +62,10 @@ body footer {
 }
 
 @media only screen and (max-width: 1000px) {
-    body main h1 {
-        padding-top: 28vh;
-        font-weight: 900;
-        padding-left: 2vh;
-    }
 
-    body main p {
-        font-size: 2vh;
-        padding-left: 2vh;
+    body main h1,
+    p,
+    a {
+        padding-left: 1vh;
     }
 }
