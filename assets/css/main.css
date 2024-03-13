@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+body p,
+h5 {
+    font-size: 1.8vh;
+}
+
+body header nav{
+    background-color: #ffffff;
+}
+
+body header nav .session-icons ul{
+    list-style: none;
+}
+
+body header nav .session-icons ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+body main {
+    background-image: url(../img/pijama-dog.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+body main h1 {
+    padding-top: 28vh;
+    font-weight: 900;
+    padding-left: 13vh;
+}
+
+body main p {
+    font-size: 2vh;
+    padding-left: 13vh;
+}
+
+body main a {
+    font-size: 2vh;
+    margin: 10vh 0vh 0vh 13vh;
+    text-decoration: none;
+    color: black;
+    background: #ffffff;
+    padding: 1.4vh;
+}
+
+body main a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body .filters {
+    height: auto;
+    position: relative;
+    margin-top: -9vh;
+    background-color: #f3f3f3;
+    padding-top: 3vh;
+    padding-bottom: 7vh;
+}
+
+body .filters .filters-container {
+    margin-top: 4vh;
+}
+
+body .product-of-sale {
+    height: auto;
+    padding-top:  13vh;
+    padding-bottom: 20vh;
+}
+
+body .product-of-sale h2 {
+    font-weight: 900;
+    padding-bottom: 4vh;
+}
+
+body .product-of-sale .product-hover:hover{
+    transform: scale(1.04);
+}
+
+body footer {
+    height: 32vh;
+    padding-top: 6vh;
+    background-color: #f3f3f3;
+}
+
+body footer .row {
+    padding-top: 2vh;
+}
+
+body footer .all-rights-reserved{
+    text-align: end;
+}
+
+body footer .services{
+    text-align: center;
+}
+
+body footer .services ul {
+    list-style: none;
+}
+
+body footer .services ul a {
+    padding-top: 5vh;
+    text-decoration: none;
+    color: #000000;
+}
+
+body footer .contact {
+    text-align: start;
+}
+
+body footer .contact ul {
+    list-style: none;
+}
+
+body footer .contact ul a {
+    padding-top: 5vh;
+    text-decoration: none;
+    color: #000000;
+}
+
+body footer .credits{
+    text-align: center;
+    padding-top: 9vh;
+    padding-bottom: 2vh;
+}
+
+body footer .credits a{
+    text-decoration: none;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body main h1 {
+        padding-left: 0vh;
+    }
+
+    body main p {
+        padding-left: 0vh;
+    }
+
+    body main a {
+        margin: 0vh 0vh 0vh 0vh;
+        padding: 1.4vh;
+    }
+}
