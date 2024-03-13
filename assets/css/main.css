@@ -61,11 +61,18 @@ body footer {
     padding-top: 6vh;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1800px) {
 
-    body main h1,
-    p,
-    a {
-        padding-left: 1vh;
+    body main h1 {
+        padding-left: 2vh;
+    }
+
+    body main p {
+        padding-left: 2vh;
+    }
+
+    body main a {
+        margin: 0vh 0vh 0vh 2vh;
+        padding: 1.4vh;
     }
 }
