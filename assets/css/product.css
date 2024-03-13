@@ -32,32 +32,13 @@ body main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 30vh;
 }
 
 body main h1 {
-    padding-top: 28vh;
+    padding-top: 10vh;
     font-weight: 900;
     padding-left: 13vh;
-}
-
-body main p {
-    font-size: 2vh;
-    padding-left: 13vh;
-}
-
-body main a {
-    font-size: 2vh;
-    margin: 10vh 0vh 0vh 13vh;
-    text-decoration: none;
-    color: black;
-    background: #ffffff;
-    padding: 1.4vh;
-}
-
-body main a:hover {
-    background-color: #000000;
-    color: #ffffff;
 }
 
 body .filters {
@@ -84,8 +65,8 @@ body .product-of-sale h2 {
     padding-bottom: 4vh;
 }
 
-body .product-of-sale .product-hover:hover{
-    transform: scale(1.04);
+body .product-of-sale .product .card{
+    height: 50vh;
 }
 
 body footer {
