@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
 }
 
-body p, h5{
+body p,
+h5 {
     font-size: 2.1vh;
 }
 
-body main{
+body main {
     background-image: url(../img/pijama-dog.jpg);
     background-position: center;
     background-size: cover;
@@ -20,18 +21,18 @@ body main{
     height: 90vh;
 }
 
-body main h1{
+body main h1 {
     padding-top: 28vh;
     font-weight: 900;
     padding-left: 13vh;
 }
 
-body main p{
+body main p {
     font-size: 2vh;
     padding-left: 13vh;
 }
 
-body main a{
+body main a {
     font-size: 2vh;
     margin: 10vh 0vh 0vh 13vh;
     text-decoration: none;
@@ -40,22 +41,35 @@ body main a{
     padding: 1.4vh;
 }
 
-body section{
+body section {
     height: auto;
     padding-top: 14vh;
 }
 
-body .product-of-sale{
+body .product-of-sale {
     height: auto;
     padding-bottom: 20vh;
 }
 
-body .product-of-sale h2{
+body .product-of-sale h2 {
     font-weight: 900;
     padding-bottom: 4vh;
 }
 
-body footer{
+body footer {
     height: 22vh;
     padding-top: 6vh;
+}
+
+@media only screen and (max-width: 1000px) {
+    body main h1 {
+        padding-top: 28vh;
+        font-weight: 900;
+        padding-left: 2vh;
+    }
+
+    body main p {
+        font-size: 2vh;
+        padding-left: 2vh;
+    }
 }
