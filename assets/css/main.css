@@ -61,7 +61,7 @@ body footer {
     padding-top: 6vh;
 }
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1000px) {
 
     body main h1 {
         padding-left: 2vh;
