@@ -39,11 +39,13 @@ body main .welcome-div h1 {
     padding-top: 28vh;
     font-weight: 900;
     padding-left: 13vh;
+    text-align: center;
 }
 
 body main .welcome-div p {
     font-size: 2vh;
     padding-left: 13vh;
+    text-align: center;
 }
 
 body main .welcome-div a {
@@ -80,16 +82,25 @@ body main form{
 
 @media only screen and (max-width: 1000px) {
 
-    body main h1 {
+    body main .welcome-div h1 {
+        padding-top: 15vh;
         padding-left: 0vh;
+        text-align: center;
     }
 
-    body main p {
+    body main .welcome-div p {
         padding-left: 0vh;
+        text-align: center;
     }
 
-    body main a {
+    body main .welcome-div a {
         margin: 0vh 0vh 0vh 0vh;
         padding: 1.4vh;
+        justify-content: center;
+    }
+
+    body main .form-div{
+        margin-top: 1vh;
+        padding: 2vh;
     }
 }

@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/register.css">
-    <link rel="icon" href="assets/img/logo.png">
+    <link rel="icon" href="../assets/img/logo.png">
     <script src="https://kit.fontawesome.com/a2eb1e59d1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,12 +21,12 @@
         <nav class="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand ms-3" href="#">
-                    <img src="../assets/img/logo.png" alt="logo" width="80" height="80">
+                    <img src="../assets/img/logo.png" alt="logo" width="30" height="30">
                 </a>
                 <div class="session-icons">
                     <ul>
                         <li class="me-4">
-                            <a class="nav-link active" aria-current="page" href="#info-contacto">Inicio</a>
+                          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                     </ul>
                 </div>
@@ -40,48 +40,60 @@
                 <h1>Registrar nuevo usuario</h1>
                 <p>Regístrate para comprar nuestros productos.</p>
                 <br>
-                <a href="login.html">Quiero iniciar sesión</a>
             </div>
             <div class="col-md-12 col-lg-6 form-div">
                 <form class="row g-3">
                     <div class="col-md-6">
-                      <label for="inputEmail4" class="form-label fw-bold">Email</label>
+                      <label for="inputEmail4" class="form-label fw-bold">Nombres</label>
                       <input type="email" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label fw-bold">Password</label>
-                      <input type="password" class="form-control" id="inputPassword4">
+                      <label for="inputPassword4" class="form-label fw-bold">Apellidos</label>
+                      <input type="text" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-12">
-                      <label for="inputAddress" class="form-label fw-bold">Address</label>
+                      <label for="inputAddress" class="form-label fw-bold">Dirección</label>
                       <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                     </div>
-                    <div class="col-12">
-                      <label for="inputAddress2" class="form-label fw-bold">Address 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    <div class="col-6">
+                      <label for="inputAddress2" class="form-label fw-bold">Teléfono</label>
+                      <input type="number" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-6">
+                      <label for="inputAddress2" class="form-label fw-bold">Correo Electrónico</label>
+                      <input type="email" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                     </div>
                     <div class="col-md-6">
-                      <label for="inputCity" class="form-label fw-bold">City</label>
-                      <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputState" class="form-label fw-bold">State</label>
+                      <label for="inputCity" class="form-label fw-bold">Ciudad</label>
                       <select id="inputState" class="form-select">
                         <option selected>Choose...</option>
                         <option>...</option>
                       </select>
                     </div>
                     <div class="col-md-6">
-                      <label for="inputZip" class="form-label fw-bold">Zip</label>
-                      <input type="text" class="form-control" id="inputZip">
+                      <label for="inputState" class="form-label fw-bold">Municipio</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
                     </div>
                     <div class="col-md-6">
-                        <label for="inputZip" class="form-label fw-bold">Zip</label>
+                      <label for="inputState" class="form-label fw-bold">País</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputZip" class="form-label fw-bold">Referencia</label>
                         <input type="text" class="form-control" id="inputZip">
                       </div>
                     <div class="col-12">
                         <a href="../index.html">Enviar</a>
                     </div>
+                    <div class="col-md-12">
+                      <a href="login.html" class="mb-3 mt-5">Loguearme</a>
+                  </div>   
                   </form>
             </div>
         </div>

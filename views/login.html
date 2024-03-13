@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/login.css">
-    <link rel="icon" href="assets/img/logo.png">
+    <link rel="icon" href="../assets/img/logo.png">
     <script src="https://kit.fontawesome.com/a2eb1e59d1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,12 +21,12 @@
         <nav class="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand ms-3" href="#">
-                    <img src="../assets/img/logo.png" alt="logo" width="80" height="80">
+                    <img src="../assets/img/logo.png" alt="logo" width="30" height="30">
                 </a>
                 <div class="session-icons">
                     <ul>
                         <li class="me-4">
-                            <a class="nav-link active" aria-current="page" href="#info-contacto">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                     </ul>
                 </div>
@@ -39,21 +39,24 @@
             <div class="col-md-12 col-lg-6 welcome-div">
                 <h1>Inicia Sesión</h1>
                 <p>Ingresa a tu usuario para comprar o regístrate.</p>
-                <br>
-                <a href="register.html">Quiero registrarme</a>
             </div>
             <div class="col-md-12 col-lg-6 form-div">
-                <form>
-                    <div class="mb-3">
+                <form class="row g-3">
+                    <div class="mb-3 col-md-12">
                         <label for="exampleInputEmail1" class="form-label fw-bold">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@gmail.com" aria-describedby="emailHelp">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-md-12">
                         <label for="exampleInputPassword1" class="form-label fw-bold">Contraseña</label>
                         <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
                     <br>
-                    <a href="../index.html?u=ASDFaskdfj4958473878s7dfs%%&==&s=1">Enviar</a>
+                    <div class="col-md-12">
+                        <a href="../index.html?u=ASDFaskdfj4958473878s7dfs%%&==&s=1" class="mb-3 mt-3">Enviar</a>
+                    </div>
+                    <div class="col-md-12">
+                        <a href="register.html" class="mb-3 mt-5">Registrarme</a>
+                    </div>      
                 </form>
             </div>
         </div>

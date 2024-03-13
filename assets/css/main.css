@@ -89,7 +89,7 @@ body .product-of-sale .product-hover:hover{
 }
 
 body footer {
-    height: 32vh;
+    height: 45vh;
     padding-top: 6vh;
     background-color: #f3f3f3;
 }
@@ -154,5 +154,25 @@ body footer .credits a{
     body main a {
         margin: 0vh 0vh 0vh 0vh;
         padding: 1.4vh;
+    }
+
+    body footer {
+        height: 65vh;
+        padding-top: 6vh;
+        background-color: #f3f3f3;
+    }
+
+    body footer .all-rights-reserved{
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    
+    body footer .services{
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    body footer .contact {
+        text-align: center;
     }
 }

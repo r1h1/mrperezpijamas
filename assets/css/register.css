@@ -39,11 +39,13 @@ body main .welcome-div h1 {
     padding-top: 28vh;
     font-weight: 900;
     padding-left: 13vh;
+    text-align: center;
 }
 
 body main .welcome-div p {
     font-size: 2vh;
     padding-left: 13vh;
+    text-align: center;
 }
 
 body main .welcome-div a {
@@ -62,7 +64,7 @@ body main a:hover {
 
 body main .form-div{
     margin-top: 1vh;
-    padding: 6vh;
+    padding: 5vh;
 }
 
 body main .form-div form a{
