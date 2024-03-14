@@ -84,4 +84,17 @@ body main form{
     body main {
         height: 150vh;
     }
+
+    body main .form-div{
+        margin-top: -4vh;
+        padding: 5vh;
+    }
+
+    body main {
+        background-image: url(../img/pijama-dog.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 180vh;
+    }
 }

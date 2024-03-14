@@ -83,7 +83,7 @@ body main form{
 @media only screen and (max-width: 1000px) {
 
     body main .welcome-div h1 {
-        padding-top: 15vh;
+        padding-top: 10vh;
         padding-left: 0vh;
         text-align: center;
     }
