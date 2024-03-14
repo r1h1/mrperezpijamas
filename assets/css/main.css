@@ -103,25 +103,12 @@ body footer .row {
 }
 
 body footer .all-rights-reserved{
-    text-align: end;
-}
-
-body footer .services{
     text-align: center;
 }
 
-body footer .services ul {
-    list-style: none;
-}
-
-body footer .services ul a {
-    padding-top: 5vh;
-    text-decoration: none;
-    color: #000000;
-}
 
 body footer .contact {
-    text-align: start;
+    text-align: center;
 }
 
 body footer .contact ul {

@@ -47,13 +47,68 @@
     </main>
 
     <section class="product-of-sale container-fluid">
-        <div class="row g-4">
+        <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4 product">
-                <div class="card shadow">
+                <div class="card shadow mb-3">
                     <div class="card-body text-start p-4">
-                        <h3>Resumen del pedido</h3>
-                        <p>Q500.00</p>
-                        <a href="#">Pagar</a>
+                        <h4 class="fw-bold">Resumen del pedido</h4>
+                        <p class="h5 mb-4">Q500.00</p>
+                        <a href="#">Continuar</a>
+                    </div>
+                </div>
+                <div class="card shadow mb-3">
+                    <div class="card-body p-4">
+                        <div class="card-payment">
+                            <h4 class="fw-bold">Facturación y envío</h4>
+                            <form class="row g-3 mt-2 mb-4">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="p text-muted">Nombres</label>
+                                    <input type="text" class="form-control" id="inputEmail4" maxlength="75">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="p text-muted">Apellidos</label>
+                                    <input type="text" class="form-control" id="inputPassword4" maxlength="75">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="inputAddress" class="p text-muted">Dirección completa</label>
+                                    <input type="text" class="form-control" id="inputAddress"
+                                        placeholder="1234 Villa Nueva" maxlength="250">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="inputAddress" class="p text-muted">Otros</label>
+                                    <input type="text" class="form-control" id="inputAddress"
+                                        placeholder="Código de acceso 1516">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputAddress2" class="p text-muted">NIT</label>
+                                    <input type="text" class="form-control" id="inputAddress2"
+                                        placeholder="Número o CF">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputAddress2" class="p text-muted">Teléfono</label>
+                                    <input type="number" class="form-control" id="inputAddress2" min="0"
+                                        placeholder="42010123" maxlength="10">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="inputState" class="p text-muted">Método de pago</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Elige...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="p text-muted" for="gridCheck">
+                                            Acepto que me contacten para informarme de mi pedido, promociones y traten mis datos para ofrecerme un mejor servicio.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <a>Finalizar</a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,29 +120,26 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">
-                                        <img src="../assets/img/pijama.jpg" alt="photo-cart" width="80">
-                                    </th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <img src="../assets/img/pijama.jpg" alt="photo-cart" width="80">
-                                    </th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <img src="../assets/img/pijama.jpg" alt="photo-cart" width="80">
-                                    </th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src="../assets/img/pijama.jpg" alt="photo-cart" width="85">
+                                    </td>
+                                    <td class="fw-bold">Pijama negra mujer</td>
+                                    <td>
+                                        <input type="number" class="form-control text-center" value="2">
+                                    </td>
+                                    <td>Q500.00</td>
+                                    <td>
+                                        <div class="row g-2">
+                                            <div class="col-md-12 col-lg-6">
+                                                <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <button class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>                                
                             </tbody>
                         </table>
                     </div>
@@ -111,7 +163,7 @@
                         <li>WhatsApp</li>
                     </a>
                     <a href="mailto:de.rivasherrera@gmail.com">
-                        <li>de.rivasherrera@gmail.com</li>
+                        <li>Correo electrónico</li>
                     </a>
                 </ul>
             </div>

@@ -81,11 +81,8 @@ body footer .row {
 }
 
 body footer .all-rights-reserved{
-    text-align: end;
-}
-
-body footer .services{
     text-align: center;
+    margin-bottom: 5vh;
 }
 
 body footer .services ul {
@@ -99,7 +96,7 @@ body footer .services ul a {
 }
 
 body footer .contact {
-    text-align: start;
+    text-align: center;
 }
 
 body footer .contact ul {
@@ -142,19 +139,5 @@ body footer .credits a{
         height: 65vh;
         padding-top: 6vh;
         background-color: #f3f3f3;
-    }
-
-    body footer .all-rights-reserved{
-        text-align: center;
-        margin-bottom: 5vh;
-    }
-    
-    body footer .services{
-        text-align: center;
-        margin-bottom: 5vh;
-    }
-
-    body footer .contact {
-        text-align: center;
     }
 }
