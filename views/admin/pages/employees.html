@@ -214,12 +214,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Empresa</h1>
+              <h1>Empleados</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-                <li class="breadcrumb-item active">Empresa</li>
+                <li class="breadcrumb-item active">Empleados</li>
               </ol>
             </div>
           </div>
@@ -230,7 +230,7 @@
       <section class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6">
               <div class="card card-light">
                 <div class="card-header">
                   <h3 class="card-title">Formulario</h3>
@@ -239,21 +239,91 @@
                 <!-- form start -->
                 <form>
                   <div class="card-body">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Nombre</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" maxlength="100">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Dirección</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" maxlength="250">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Teléfono</label>
-                      <input type="number" class="form-control" id="exampleInputEmail1">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">NIT</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" maxlength="12">
+                    <div class="row g-2">
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Nombre completo</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Direccion</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Telefono</label>
+                          <input type="number" class="form-control" id="exampleInputEmail1" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Correo electrónico</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Ciudad</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Municipio</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Pais</label>
+                          <select class="form-control" aria-label="Default select example">
+                            <option value="1">Guatemala</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Sexo</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">DPI</label>
+                          <input type="number" class="form-control" id="exampleInputEmail1" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">NIT</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Rol</label>
+                          <select class="form-control" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Empresa</label>
+                          <select class="form-control" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <!-- /.card-body -->
@@ -264,14 +334,14 @@
                 </form>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <div class="card card-light">
                 <div class="card-header">
                   <h3 class="card-title">Datos</h3>
                 </div>
                 <!-- /.card-header -->
-                <div class="card-body">
-                  <table id="example1" class="table table-bordered table-striped">
+                <div class="card-body table-responsive">
+                  <table id="example1" class="table table-bordered table-striped table-responsive">
                     <thead>
                       <tr>
                         <th>Nombre</th>

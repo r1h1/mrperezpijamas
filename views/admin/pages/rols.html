@@ -214,12 +214,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Empresa</h1>
+              <h1>Roles</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-                <li class="breadcrumb-item active">Empresa</li>
+                <li class="breadcrumb-item active">Roles</li>
               </ol>
             </div>
           </div>
@@ -244,16 +244,13 @@
                       <input type="text" class="form-control" id="exampleInputEmail1" maxlength="100">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Dirección</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" maxlength="250">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Teléfono</label>
-                      <input type="number" class="form-control" id="exampleInputEmail1">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">NIT</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" maxlength="12">
+                      <label for="exampleInputPassword1">Permiso</label>
+                      <select class="form-control" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
                     </div>
                   </div>
                   <!-- /.card-body -->
@@ -265,6 +262,74 @@
               </div>
             </div>
             <div class="col-6">
+              <div class="card card-light">
+                <div class="card-header">
+                  <h3 class="card-title">Paginas</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Rol</label>
+                      <select class="form-control" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Pagina acceso</label>
+                      <select class="form-control" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+  
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-success">Añadir</button>
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12">
               <div class="card card-light">
                 <div class="card-header">
                   <h3 class="card-title">Datos</h3>
