@@ -94,7 +94,7 @@ CREATE TABLE Productos(
     MarcaId INT NULL,
     CategoriaId INT NULL,
     GeneroId INT NULL,
-    FOREIGN KEY (MarcaId) REFERENCES Marcas(MarcaId),
+    FOREIGN KEY (MarcaId) REFERENCES Marcas(MarcasId),
     FOREIGN KEY (CategoriaId) REFERENCES Categorias(CategoriaId),
     FOREIGN KEY (GeneroId) REFERENCES Genero(GeneroId)
 );
