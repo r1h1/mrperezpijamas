@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+body p,
+h5 {
+    font-size: 1.8vh;
+}
+
+body header nav{
+    background-color: #ffffff;
+}
+
+body header nav .session-icons ul{
+    list-style: none;
+}
+
+body header nav .session-icons ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+body main {
+    background-image: url(../img/pijama-dog.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+body main h1 {
+    padding-top: 28vh;
+    font-weight: 900;
+    padding-left: 13vh;
+}
+
+body main p {
+    font-size: 2vh;
+    padding-left: 13vh;
+}
+
+body main a {
+    font-size: 2vh;
+    margin: 10vh 0vh 0vh 13vh;
+    text-decoration: none;
+    color: black;
+    background: #ffffff;
+    padding: 1.4vh;
+}
+
+body main a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body .product-of-sale a{
+    text-decoration: none;
+}
+
+body .filters {
+    height: auto;
+    position: relative;
+    margin-top: -9vh;
+    background-color: #f3f3f3;
+    padding-top: 3vh;
+    padding-bottom: 7vh;
+}
+
+body .filters .filters-container {
+    margin-top: 4vh;
+}
+
+body .product-of-sale {
+    height: auto;
+    padding-top:  13vh;
+    padding-bottom: 20vh;
+}
+
+body .product-of-sale h2 {
+    font-weight: 900;
+    padding-bottom: 4vh;
+}
+
+body .product-of-sale .product-hover:hover{
+    transform: scale(1.02);
+}
+
+body .product-of-sale .product-hover i:hover{
+    transform: scale(1.03);
+}
+
+body footer {
+    height: 45vh;
+    padding-top: 6vh;
+    background-color: #f3f3f3;
+}
+
+body footer .row {
+    padding-top: 2vh;
+}
+
+body footer .all-rights-reserved{
+    text-align: center;
+}
+
+
+body footer .contact {
+    text-align: center;
+}
+
+body footer .contact ul {
+    list-style: none;
+}
+
+body footer .contact ul a {
+    padding-top: 5vh;
+    text-decoration: none;
+    color: #000000;
+}
+
+body footer .credits{
+    text-align: center;
+    padding-top: 9vh;
+    padding-bottom: 2vh;
+}
+
+body footer .credits a{
+    text-decoration: none;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body main h1 {
+        padding-left: 0vh;
+    }
+
+    body main p {
+        padding-left: 0vh;
+    }
+
+    body main a {
+        margin: 0vh 0vh 0vh 0vh;
+        padding: 1.4vh;
+    }
+
+    body footer {
+        height: 65vh;
+        padding-top: 6vh;
+        background-color: #f3f3f3;
+    }
+
+    body footer .all-rights-reserved{
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    
+    body footer .services{
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    body footer .contact {
+        text-align: center;
+    }
+
+    #toast-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+      
+      .toast {
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      
+      .toast.show {
+        opacity: 1;
+      }
+      
+      .toast-message {
+        margin: 0;
+      }
+      
+      .toast-close-button {
+        float: right;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      
+}
