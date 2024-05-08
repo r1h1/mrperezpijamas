@@ -246,6 +246,8 @@
                       <div class="col-sm-12 col-lg-6">
                         <div class="form-group">
                           <label for="exampleInputEmail1">Nombre completo</label>
+                          <input type="text" class="form-control" id="idUsuario" hidden>
+                          <input type="text" class="form-control" id="rolUsuario" hidden>
                           <input type="text" class="form-control" id="nombreCompletoUsuario" maxlength="100">
                         </div>
                       </div>
@@ -303,6 +305,7 @@
 
                   <div class="card-footer">
                     <button class="btn btn-success" onclick="agregarUsuario()">Guardar</button>
+                    <button class="btn btn-warning" onclick="editarUsuarioLuegoDeEdicion()">Editar</button>
                   </div>
                 </div>
               </div>
