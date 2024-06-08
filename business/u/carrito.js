@@ -262,6 +262,7 @@ const validarDatosLlenosFinalizarCompra = () => {
 
 const generarOrdenYFinalizarCarrito = () => {
     try {
+
         let totalCantidadCarrito = document.getElementById('totalCantidadCarrito').innerHTML;
         const generarNumeroUnico = () => {
             let numero = '';
@@ -374,7 +375,7 @@ const insertarOrdenDeCompraYBorrarCarritoLogicamente = (numeroOrdenGenerado, tot
 const mostrarProductosEnCarrito = (dataObtained) => {
     try {
         let bodydata = '';
-        if (dataObtained.cantidadTotalEnCarrito == 0) {
+        if (dataObtained.cantidadTotalEnCarrito === 0) {
             bodydata += `
             <tr>
                 <td>
@@ -382,56 +383,62 @@ const mostrarProductosEnCarrito = (dataObtained) => {
                 </td>
             </tr>
             `;
-        }
-        else {
-            for (let i = 0; i < dataObtained.cantidadTotalEnCarrito; i++) {
+        } else {
+            for (let i = 0; i < dataObtained.carritoData.length; i++) {
+                const item = dataObtained.carritoData[i];
+                if (!item) {
+                    // Skip iteration if item is falsy
+                    continue;
+                }
 
-                let IdCarrito = parseInt(dataObtained.carritoData[i].carritoId);
-                let IdProducto = parseInt(dataObtained.carritoData[i].productoId);
-                let ProductoImagen = dataObtained.carritoData[i].productoImagen.toString();
-                let ProductoNombre = dataObtained.carritoData[i].productoNombre.toString();
-                let ProductoCantidad = parseInt(dataObtained.carritoData[i].productoCantidad);
-                let ProductoPrecio = parseFloat(dataObtained.carritoData[i].productoPrecio);
-                let ProductoDescripcion = dataObtained.carritoData[i].productoDescripcion.toString();
-                let TotalCantidad = parseInt(dataObtained.carritoData[i].totalCantidad);
-                let UsuarioCarrito = dataObtained.carritoData[i].usuarioId;
-                let CarritoCantidad = dataObtained.carritoData[i].cantidad;
-                let ProductoMarca = dataObtained.carritoData[i].marcaId;
-                let ProductoCategoria = dataObtained.carritoData[i].categoriaId
-                let ProductoGenero = dataObtained.carritoData[i].generoId;
+                const {
+                    carritoId,
+                    productoId,
+                    productoImagen,
+                    productoNombre,
+                    productoCantidad,
+                    productoPrecio,
+                    productoDescripcion,
+                    totalCantidad,
+                    usuarioId,
+                    cantidad,
+                    marcaId,
+                    categoriaId,
+                    generoId
+                } = item;
 
-                let NuevaCantidad = dataObtained.carritoData[i].cantidad + ProductoCantidad;
+                const nuevaCantidad = cantidad + productoCantidad;
 
                 bodydata += `
                     <tr>
                         <td hidden>
-                            <p id="LblIdProducto">${dataObtained.carritoData[i].carritoId}</p>
+                            <p id="LblIdCarrito">${carritoId}</p>
                         </td>
                         <td hidden>
-                            <p id="LblIdProducto">${dataObtained.carritoData[i].productoId}</p>
+                            <p id="LblIdProducto">${productoId}</p>
                         </td>
                         <td>#${i + 1}</td>
                         <td>
-                            <img src="${dataObtained.carritoData[i].productoImagen}" alt="photo-cart" width="75">
+                            <img src="${productoImagen}" alt="photo-cart" width="75">
                         </td>
-                        <td class="fw-bold">${dataObtained.carritoData[i].productoNombre}</td>
+                        <td class="fw-bold">${productoNombre}</td>
                         <td>
-                            <input type="number" class="border border-2 text-center" value="${dataObtained.carritoData[i].cantidad}" min="1" id="TxtCantidadProducto" disabled>
+                            <input type="number" class="border border-2 text-center" value="${cantidad}" min="1" id="TxtCantidadProducto" disabled>
                         </td>
                         <td hidden>
-                            <input type="number" class="border border-2 text-center" value="${dataObtained.carritoData[i].productoPrecio}" min="1">
+                            <input type="number" class="border border-2 text-center" value="${productoPrecio}" min="1">
                         </td>
                         <td hidden>
-                            <input type="number" class="border border-2 text-center" value="${dataObtained.carritoData[i].productoDescripcion}" min="1">
+                            <input type="number" class="border border-2 text-center" value="${productoDescripcion}" min="1">
                         </td>
-                        <td>Q<span id="LblTotalPrecio">${dataObtained.carritoData[i].totalCantidad}</span></td>
+                        <td>Q<span id="LblTotalPrecio">${totalCantidad}</span></td>
                         <td>
                             <div class="row g-2">
                                 <div class="col-md-12 col-lg-12">
-                                    <button class="btn btn-danger" onclick="recomposicionProductoAlEliminarDeCarrito(${IdProducto}, '${ProductoImagen}', '${ProductoNombre}', 
-                                    ${ProductoCantidad}, ${ProductoPrecio}, '${ProductoDescripcion}', '${TotalCantidad}', ${NuevaCantidad}, 
-                                    ${UsuarioCarrito}, ${IdCarrito}, ${CarritoCantidad}, ${ProductoMarca}, ${ProductoCategoria}, ${ProductoGenero})"><i
-                                            class="fa-solid fa-trash"></i></button>
+                                    <button class="btn btn-danger" onclick="recomposicionProductoAlEliminarDeCarrito(
+                                        ${productoId}, '${productoImagen}', '${productoNombre}', ${productoCantidad}, ${productoPrecio}, 
+                                        '${productoDescripcion}', '${totalCantidad}', ${nuevaCantidad}, ${usuarioId}, ${carritoId}, ${cantidad}, 
+                                        ${marcaId}, ${categoriaId}, ${generoId})"><i class="fa-solid fa-trash"></i></button>
                                 </div>
                             </div>
                         </td>
@@ -441,11 +448,11 @@ const mostrarProductosEnCarrito = (dataObtained) => {
         }
         document.getElementById('TblProductosEnCarrito').innerHTML = bodydata;
         document.getElementById('LblCantidadProductos').innerHTML = ': ' + dataObtained.cantidadTotalEnCarrito;
-    }
-    catch (error) {
+    } catch (error) {
         console.log(error);
     }
 }
+
 
 
 const recomposicionProductoAlEliminarDeCarrito = (IdProducto, ProductoImagen, ProductoNombre, ProductoCantidad,
